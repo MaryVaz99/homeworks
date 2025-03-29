@@ -1,0 +1,89 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Шрифти */
+@import url(fonts.css);
+
+body{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 18px;
+}
+
+.header>ul>li>a{
+    font-family: "GreatVibes", fantasy;
+    color: blueviolet;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.header>ul>li {
+    text-align: right;
+}
+
+.header span{
+    font-weight: 700;
+}
+
+.main-container h1 {
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #1A1A1A;
+}
+
+#task-1 h2 {
+    font-family: "Poppins", sans-serif;
+    color: #1A1A1A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#task-1 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #808080;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#task-2 h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #101a53;
+    text-align: center;
+    line-height: 80px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #6b77bd, 3px 3px 8px #f54317;
+}
+
+.text {
+    font-family: "Tektur";
+}
+
+.text-medium {
+    font-weight: 500;
+    text-align: justify;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.footer p {
+    font-family: "GreatVibes", fantasy;
+    color: blueviolet;
+    font-size: 25px;
+    line-height: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.footer p > a {
+    color: #f54317;
+    font-size: 35px;
+    line-height: 60px;
+}

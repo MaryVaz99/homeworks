@@ -1,0 +1,35 @@
+/* Відпрацювання додавання шрифтів в style.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+
+@font-face {
+    font-family: "Tektur";
+    src: url(../fonts/Tektur-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tektur";
+    src: url(../fonts/Tektur-Medium.woff2) format(woff2);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tektur";
+    src: url(../fonts/Tektur-Bold.woff2) format(woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url("../fonts/GreatVibes.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: wrap;
+}
