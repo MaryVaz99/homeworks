@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Скидання стилів */
 @import url(reset.css);
 
@@ -93,3 +94,100 @@ ol * {
     color: #a0f0fc;
 }
 
+=======
+/* Скидання стилів */
+@import url(reset.css);
+
+
+* {
+    color: red;
+} 
+
+p {
+    color: black;
+}
+
+.text {
+    color: green;
+}
+
+#general span {
+    color: yellowgreen;
+}
+
+.title-general {
+    color: blueviolet;
+}
+
+h2 {
+    color: aqua;
+}
+
+[class*="first"] {
+    color: darkred;
+}
+
+.list-title {
+    color: brown;
+}
+
+div.footer-container li{
+    color: palevioletred;
+}
+
+.list .list-subtitle {
+    color: blue;
+}
+
+.nav>.nav-item {
+    color: chocolate;
+}
+
+.title-general~h2 {
+    color: burlywood;
+}
+
+h2+.text{
+    color: violet;
+}
+
+ol * {
+    color: purple;
+}
+
+
+/* Стилі для додаткового завдання */
+
+.additional-task * {
+    color: black;
+}
+
+.additional-task>ul>li{
+    color: red;
+}
+
+.additional-task>ul>li~li{
+    color: green;
+}
+
+.additional-task>ul>li>ul>li {
+    color: blue;
+}
+
+.additional-task>ul>li>ul>li~li {
+    color: orange;
+}
+
+.additional-task>ul>li>ul>li>ol>li {
+    color: #4597f7;
+}
+
+.additional-task>ul>li>ul>li>ol>li~li {
+    color: #5d5d5d;
+}
+
+.additional-task>ul>li>ul>li>span {
+    color: #a0f0fc;
+}
+
+>>>>>>> ce1c6aaa3dd01a6f1a3c74078edcf3804828eb5b
