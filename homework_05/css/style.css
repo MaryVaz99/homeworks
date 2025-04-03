@@ -1,0 +1,120 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Підключення локальних шрифтів */
+@import url(fonts.css);
+
+body {
+    font-family: "Circular Std", sans-serif;
+    color: #737373;
+    font-size: 14px;
+    line-height: 1.428;
+    letter-spacing: 0.2px;
+}
+
+.section {
+    background-color: #231F8B;
+}
+
+.container {
+    max-width: 1050px;
+    padding: 112px 0px;
+    margin: 0 auto;
+}
+
+.section-content {
+    margin-bottom: 70px;
+}
+
+.section-title {
+    color: #5A54F2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.715;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.section-subtitle {
+    color: #fff;
+    font-family: "Circular Std", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    max-width: 765px;
+    color: #fff;
+    font-family: "Circular Std", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.428;
+}
+
+.section-cards {
+    width: 100%;
+    font-size: 0;
+    margin: 0px -15px;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-content {
+    max-width: 230px;
+    width: 100%;
+    padding: 35px 40px;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.card-even {
+    margin-top: 48px;
+}
+
+.card-content img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 20px;
+    font-family: "Circular Std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #252B42;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+}
+
+.card-content h3 span {
+    text-transform: uppercase;
+}
+
+.line-decor {
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+    margin-bottom: 20px;
+}
+
+.card-content-hover {
+    background-color: #5A54F2;
+    color: #fff;
+}
+
+.card-content-hover h3 {
+    color: #fff;
+}
+
+.card-content-hover .line-decor {
+    background-color: #fff;
+}
