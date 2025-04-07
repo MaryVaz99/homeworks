@@ -1,0 +1,181 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.wrapper {
+    overflow: clip;
+    min-width: 100%;
+}
+
+.header,
+.footer {
+    font-family: "Permanent Marker", cursive;
+    font-size: 35px;
+    text-align: center;
+    color: #4a24f0;
+    text-shadow: 5px 5px 5px rgba(247, 247, 53, 0.74);
+    margin-bottom: 25px;
+}
+
+.footer {
+    margin-bottom: 0px;
+}
+
+.container-ecobazar {
+    max-width: 678px;
+    margin: 0 auto;
+
+    /* відступи безпеки  */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.descriptions p {
+    margin-bottom: 20px;
+}
+
+.descriptions>ul {
+    margin-bottom: 20px;
+}
+
+.descriptions>ul>li {
+    margin-bottom: 14px;
+    padding-left: 28px;
+    background: url("../img/check.png") 0 0 / 20px 20px no-repeat;
+    min-height: 20px;
+}
+
+.descriptions>ul>li.item-end {
+    margin-bottom: 0px;
+}
+
+.descriptions>p.paragraph-end {
+    margin-bottom: 0px;
+}
+
+.section-hydra {
+    background-color: #302C42;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hydra-about {
+    background: url("../img/decor-wave.png") 50% /auto no-repeat;
+    margin-bottom: 50px;
+}
+
+.container-hydra {
+    max-width: 1302px;
+    margin: 0 auto;
+    font-size: 0;
+    /* відступи безпеки  */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hydra-about-img {
+    display: inline-block;
+    max-width: 524px;
+    width: 100%;
+    margin-right: 118px;
+    vertical-align: middle;
+}
+
+.hydra-about-img img {
+    border-radius: 240px 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hydra-about-content {
+    display: inline-block;
+    max-width: 630px;
+    width: 100%;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.hydra-about-title {
+    margin-bottom: 40px;
+}
+
+.hydra-about-title p {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hydra-about-title p span {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
+}
+
+.hydra-about-text {
+    margin-bottom: 28px;
+}
+
+.hydra-about-button {
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    color: #343045;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 16px 40px;
+    text-align: center;
+}
+
+.hydra-contacts {
+    font-size: 0;
+    border-radius: 90px;
+    background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    padding: 25px 40px;
+}
+
+.block {
+    width: 33.33%;
+    display: inline-block;
+    min-height: 118px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    border-right: 1px solid rgba(192, 183, 232, 0.33);
+    padding: 23px 10px 23px 70px;
+    vertical-align: middle;
+}
+
+.block p span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.block-end {
+    border-right: none;
+}
+
+.hydra-contacts-location {
+    background: url("../img/location-icon.svg") left center / 70px 70px no-repeat;
+}
+
+.hydra-contacts-tel {
+    padding-left: 90px;
+    background: url("../img/phone-call-icon.svg") 20px center / 60px 60px no-repeat;
+}
+
+.hydra-contacts-mail {
+    padding-left: 90px;
+    background: url("../img/mail-icon.svg") 20px center / 65px 65px no-repeat;
+}
