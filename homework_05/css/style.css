@@ -14,11 +14,11 @@ body {
 
 .section {
     background-color: #231F8B;
+    padding: 112px 0px;
 }
 
 .container {
     max-width: 1050px;
-    padding: 112px 0px;
     margin: 0 auto;
 }
 
@@ -62,8 +62,8 @@ body {
 .card {
     display: inline-block;
     vertical-align: top;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .card-content {
@@ -76,7 +76,7 @@ body {
 }
 
 .card-even {
-    margin-top: 48px;
+    padding-top: 48px;
 }
 
 .card-content img {
