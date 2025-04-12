@@ -87,13 +87,16 @@ body {
 .hydra-about-img {
     display: inline-block;
     max-width: 524px;
+    max-height: 557px;
     width: 100%;
     margin-right: 118px;
     vertical-align: middle;
 }
 
 .hydra-about-img img {
-    border-radius: 240px 100px;
+    /* border-radius: 240px 100px; - значення в макеті */
+    border-radius: 45.8% 17.95%;
+    /* 240/524*100=45.8    100/557*100=17.95 */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -107,17 +110,15 @@ body {
 
 .hydra-about-title {
     margin-bottom: 40px;
-}
-
-.hydra-about-title p {
     font-size: 36px;
-    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
     text-transform: uppercase;
 }
 
-.hydra-about-title p span {
-    color: rgba(255, 255, 255, 0.95);
-    font-weight: 300;
+.hydra-about-title strong {
+    font-weight: 700;
+    color: #fff;
 }
 
 .hydra-about-text {
@@ -125,8 +126,6 @@ body {
 }
 
 .hydra-about-button {
-    min-width: 200px;
-    min-height: 50px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     color: #343045;
@@ -147,19 +146,17 @@ body {
 
 .block {
     width: 33.33%;
-    display: inline-block;
     min-height: 118px;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 14px;
     border-right: 1px solid rgba(192, 183, 232, 0.33);
     padding: 23px 10px 23px 70px;
     vertical-align: middle;
 }
 
-.block p span {
-    font-size: 14px;
-    font-weight: 400;
+.block h3 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .block-end {
