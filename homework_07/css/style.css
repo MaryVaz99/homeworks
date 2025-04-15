@@ -1,0 +1,273 @@
+/* Підключення шрифтів */
+
+/* Google Fonts (Plugin) */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.21;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    font-family: "Permanent Marker", cursive;
+    font-size: 35px;
+    text-align: center;
+    color: #4a24f0;
+    text-shadow: 5px 5px 5px rgba(247, 247, 53, 0.74);
+    margin-bottom: 25px;
+}
+
+[class*="container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    /* відступи безпеки */
+    padding: 0 15px;
+}
+
+/* Стилі для гри */
+
+.section-game {
+    font-family: "Quantico", serif;
+    border-top: 5px solid #FFBE48;
+    border-bottom: 5px solid #FFBE48;
+}
+
+.game-field {
+    background-color: #412672;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.block {
+    background-color: #FFBE48;
+}
+
+.block:first-child,
+.block:last-child {
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.block:nth-child(2) {
+    width: 30px;
+    height: 150px;
+    margin-left: 110px;
+}
+
+.block:nth-child(3) {
+    width: 200px;
+    height: 20px;
+    margin-left: 110px;
+}
+
+.block:nth-child(4) {
+    width: 15px;
+    height: 250px;
+    margin-left: 295px;
+}
+
+.block:nth-child(5) {
+    width: 80px;
+    height: 25px;
+    margin-left: 295px;
+}
+
+.block:nth-child(6) {
+    width: 30px;
+    height: 350px;
+    margin-left: 375px;
+    margin-top: -350px;
+}
+
+.block:nth-child(7) {
+    width: 130px;
+    height: 20px;
+    margin-left: 405px;
+    margin-top: -350px;
+}
+
+.block:nth-child(8) {
+    width: 15px;
+    height: 250px;
+    margin-left: 520px;
+}
+
+.block:nth-child(9) {
+    width: 100px;
+    height: 30px;
+    margin-left: 520px;
+}
+
+.block:nth-child(10) {
+    width: 15px;
+    height: 200px;
+    margin-left: 605px;
+}
+
+.block:nth-child(11) {
+    width: 150px;
+    height: 20px;
+    margin-left: 605px;
+}
+
+.block:nth-child(12) {
+    width: 10px;
+    height: 40px;
+    margin-left: 745px;
+}
+
+.block:last-child {
+    margin-left: 320px;
+}
+
+.block:first-child:hover,
+.block:last-child:hover {
+    color: #412672;
+}
+
+.block:not(:first-child) {
+    visibility: hidden;
+}
+
+.block:hover,
+.block:hover+.block {
+    visibility: visible;
+}
+
+/* Стилі для блоків з макету */
+
+.section-prof-faculty {
+    background-color: #412672;
+    padding: 60px 0 80px;
+}
+
+.section-prof-faculty h2 {
+    font-size: 38px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.section-prof-faculty h2>strong {
+    font-weight: 700;
+}
+
+.prof-faculty-list {
+    margin: 0 -20px -20px 0;
+    font-size: 0;
+}
+
+.prof-faculty-item {
+    display: inline-block;
+    padding: 0 20px 20px 0;
+    width: 33.33%;
+    vertical-align: top;
+}
+
+.prof-faculty-card {
+    background-color: #fff;
+    min-height: 476px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.266;
+}
+
+.prof-faculty-card>*:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.prof-faculty-card>h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.prof-faculty-card>p {
+    color: #4F4F4F;
+}
+
+.prof-faculty-card>a {
+    color: #FE3F3F;
+}
+
+.faculty-card-img>img {
+    width: 100%;
+}
+
+.prof-faculty-card:hover {
+    background-color: #FFBE48;
+}
+
+.prof-faculty-card>a:hover {
+    text-decoration: underline;
+}
+
+.section-best-faculty {
+    padding: 153px 0 137px;
+}
+
+.best-faculty-block {
+    max-width: 518px;
+    margin-right: 90px;
+}
+
+.best-faculty-block>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.best-faculty-block h2 {
+    color: #412672;
+    font-size: 34px;
+}
+
+.best-faculty-block h2>strong {
+    font-weight: 700;
+}
+
+.best-faculty-block p {
+    font-size: 22px;
+    color: #412672;
+}
+
+.best-faculty-block ul {
+    padding: 13px 0;
+}
+
+.best-faculty-block li {
+    color: #4F4F4F;
+    font-size: 20px;
+    padding-left: 44px;
+    line-height: 1.45;
+}
+
+.best-faculty-block li:not(:last-child) {
+    margin-bottom: 21px;
+}
+
+.best-faculty-block>ul>li::before {
+    content: "";
+    width: 29px;
+    height: 29px;
+    background: url(../img/check.svg) center / 29px no-repeat;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: -44px;
+}
