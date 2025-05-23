@@ -1,0 +1,272 @@
+/* Підключення шрифтів */
+
+/* Google Fonts (Plugin) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #4f4f4f;
+    line-height: 1.267;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header,
+.footer {
+    display: none;
+}
+
+.page__title {
+    padding: 15px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #FFBE48;
+}
+
+/*================ section-prof-fac =============== */
+
+.section-prof-fac {
+    background-color: #412672;
+    padding: 61px 0 102px 0;
+}
+
+.section-prof-fac__title {
+    color: #fff;
+    font-size: 38px;
+    line-height: 1.21;
+    margin-bottom: 31px;
+}
+
+.section-prof-fac__title strong {
+    display: block;
+    font-weight: 700;
+}
+
+.section-prof-fac__cards-wrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-basis: 386px;
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #FFBE48;
+}
+
+.card__img-wrap {
+    position: relative;
+}
+
+.card__img-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card__img-wrap:hover::before {
+    opacity: 0.3;
+}
+
+.card__image {
+    width: 100%;
+    height: 266px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.card__link {
+    color: #FE3F3F;
+    position: relative;
+}
+
+.card__link::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: #FE3F3F;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+/*============= section-best-fac ==============*/
+
+.section-best-fac {
+    padding: 55px 0 72px 0;
+}
+
+.section-best-fac__body {
+    display: flex;
+    gap: 30px 90px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-best-fac__info {
+    flex-basis: 518px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #412672;
+}
+
+.info-box__title {
+    font-size: 34px;
+    line-height: 1.205;
+}
+
+.info-box__title strong {
+    display: block;
+    font-weight: 700;
+}
+
+.info-box p {
+    font-size: 22px;
+    line-height: 1.227;
+}
+
+.info-box__list {
+    padding: 13px 0;
+}
+
+.info-box__item-list {
+    color: #4f4f4f;
+    font-size: 20px;
+    line-height: 1.45;
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.info-box__item-list:before {
+    content: "";
+    align-self: flex-start;
+    background: url(../img/icon/check.svg) 0 0 / 100% no-repeat;
+    flex-shrink: 0;
+    width: 29px;
+    height: 29px;
+}
+
+.info-box__item-list:not(:last-child) {
+    margin-bottom: 21px;
+}
+
+.section-best-fac__img-wrap {
+    flex-basis: 764px;
+    margin-right: -172px;
+}
+
+.section-best-fac__image {
+    width: 100%;
+    height: 100%;
+}
+
+/* ================ section-academy ============== */
+
+.section-academy {
+    padding: 70px 0;
+    background-color: #412672;
+    color: #fff;
+    font-size: 24px;
+}
+
+.section-academy__container>*:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.section-academy__title {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.section-academy__title strong {
+    font-weight: 700;
+}
+
+.section-academy__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-academy__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-academy__img-wrap {
+    width: 70px;
+    height: 70px;
+}
+
+.section-academy__image {
+    width: 100%;
+    height: 100%;
+}
+
+.section-academy__info p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.section-academy__info p strong {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+}
