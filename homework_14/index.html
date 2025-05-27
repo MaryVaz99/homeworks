@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+    <head>
+        <!-- Кодування тексту -->
+        <meta charset="UTF-8">
+        <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Підключення окремого файлу стилів -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Заголовок сторінки в браузері -->
+        <title>Homework 14. Forms</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">header</header>
+            <main class="page">
+                <div class="section-checkout">
+                    <div class="section-checkout__container">
+                        <form action="#" method="post" class="form-checkout">
+                            <div class="user-info">
+                                <div class="user-info__billing">
+                                    <h2 class="user-info__title title-info">
+                                        Billing Information
+                                    </h2>
+                                    <div class="user-info__inputs">
+                                        <div
+                                            class="user-info__row">
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-280">
+                                                <label for="user-fn">first
+                                                    name</label>
+                                                <input type="text"
+                                                    name="form[user-fn]"
+                                                    id="user-fn"
+                                                    required
+                                                    placeholder="Your first name">
+                                            </div>
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-280">
+                                                <label for="user-ln">last
+                                                    name</label>
+                                                <input type="text"
+                                                    name="form[user-ln]"
+                                                    id="user-ln"
+                                                    required
+                                                    placeholder="Your last name">
+                                            </div>
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-280">
+                                                <label
+                                                    for="user-company">company
+                                                    name (optional)</label>
+                                                <input type="text"
+                                                    name="form[user-company]"
+                                                    id="user-company"
+                                                    placeholder="Company name">
+                                            </div>
+                                        </div>
+                                        <div class="user-info__row">
+                                            <div class="user-info__box-input">
+                                                <label for="user-address">street
+                                                    address</label>
+                                                <input type="text"
+                                                    name="form[user-address]"
+                                                    id="user-address"
+                                                    required
+                                                    placeholder="Your address">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="user-info__row">
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-280">
+                                                <label
+                                                    for="user-country">country /
+                                                    region</label>
+                                                <select
+                                                    class="user-info__select"
+                                                    name="form[user-country]"
+                                                    id="user-country"
+                                                    required>
+                                                    <option value
+                                                        selected
+                                                        disabled
+                                                        hidden>Select</option>
+                                                    <option
+                                                        value="ua">Ukraine</option>
+                                                    <option
+                                                        value="pl">Poland</option>
+                                                    <option
+                                                        value="fr">France</option>
+                                                </select>
+                                            </div>
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-280">
+                                                <label
+                                                    for="user-states">states</label>
+                                                <select
+                                                    class="user-info__select"
+                                                    name="form[user-states]"
+                                                    id="user-states"
+                                                    required>
+                                                    <option value
+                                                        selected
+                                                        disabled
+                                                        hidden>Select</option>
+                                                    <option
+                                                        value="ua">Ukraine</option>
+                                                    <option
+                                                        value="pl">Poland</option>
+                                                    <option
+                                                        value="fr">France</option>
+                                                </select>
+                                            </div>
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-280">
+                                                <label for="user-zip-code">zip
+                                                    code</label>
+                                                <input type="text"
+                                                    name="form[user-zip-code]"
+                                                    id="user-zip-code"
+                                                    required
+                                                    placeholder="Zip Code">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="user-info__row">
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-428">
+                                                <label
+                                                    for="user-email">email</label>
+                                                <input type="email"
+                                                    name="form[email]"
+                                                    id="user-email"
+                                                    required
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <div
+                                                class="user-info__box-input user-info__box-input--input-428">
+                                                <label
+                                                    for="user-tel">phone</label>
+                                                <input type="tel"
+                                                    name="form[tel]"
+                                                    id="user-tel"
+                                                    required
+                                                    placeholder="Phone number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-info__checkbox checkbox">
+                                        <div class="checkbox__box-input">
+                                            <input type="checkbox"
+                                                id="user-ship"
+                                                name="form[user-dif-address]"
+                                                value>
+                                            <label class="checkbox__label"
+                                                for="user-ship">
+                                                Ship to a different address
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-info__additional">
+                                    <h2 class="user-info__title title-info">
+                                        Additional Info
+                                    </h2>
+                                    <div class="user-info__box-notes">
+                                        <label class="user-info__txt-label"
+                                            for="user-notes">order notes
+                                            (optional)</label>
+                                        <textarea id="user-notes"
+                                            class="user-info__textarea"
+                                            name="form[notes]"
+                                            placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-info order-info--margin-bottom">
+                                <div class="order-info__summary">
+                                    <h2
+                                        class="order-info__title title-order">order
+                                        summary</h2>
+                                    <div
+                                        class="order-info__product-box box-product">
+                                        <div class="box-product__item">
+                                            <div
+                                                class="box-product__name product">
+                                                <a href="#"
+                                                    class="product__img-link">
+                                                    <img
+                                                        src="img/green-capsicum.png"
+                                                        alt="green capsicum"
+                                                        class="product__image">
+                                                </a>
+                                                <a class="product__link"
+                                                    href="#">green capsicum</a>
+                                                <label class="product__label">
+                                                    <span>x</span>
+                                                    <input
+                                                        class="product__amount"
+                                                        name="form[product-amount]"
+                                                        type="number"
+                                                        value="5"
+                                                        min="1"
+                                                        max="100">
+                                                </label>
+                                            </div>
+                                            <span
+                                                class="box-product__price">$70.00</span>
+                                        </div>
+                                        <div class="box-product__item">
+                                            <div
+                                                class="box-product__name product">
+                                                <a href="#"
+                                                    class="product__img-link">
+                                                    <img
+                                                        src="img/red-capsicum.png"
+                                                        alt="red capsicum"
+                                                        class="product__image">
+                                                </a>
+                                                <a class="product__link"
+                                                    href="#">red capsicum</a>
+                                                <label class="product__label">
+                                                    <span>x</span>
+                                                    <input
+                                                        class="product__amount"
+                                                        name="form[product-amount]"
+                                                        type="number"
+                                                        value="1"
+                                                        min="1"
+                                                        max="100">
+                                                </label>
+                                            </div>
+                                            <span
+                                                class="box-product__price">$14.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-info__details details">
+                                        <div class="details__subtotal">
+                                            <p>subtotal:</p>
+                                            <span>$84.00</span>
+                                        </div>
+                                        <div class="details__shipping">
+                                            <p>shipping:</p>
+                                            <span>free</span>
+                                        </div>
+                                        <div class="details__total">
+                                            <p>total:</p>
+                                            <span>$84.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-info__payment">
+                                    <h2 class="order-info__title title-order">
+                                        payment method
+                                    </h2>
+                                    <div
+                                        class="order-info__box-input radio-input">
+                                        <div class="radio-input__box">
+                                            <input type="radio"
+                                                id="cash"
+                                                name="pay-method"
+                                                value="cash"
+                                                checked>
+                                            <label class="radio-input__label"
+                                                for="cash">cash on
+                                                delivery</label>
+                                        </div>
+
+                                        <div class="radio-input__box">
+                                            <input type="radio"
+                                                id="paypal"
+                                                name="pay-method"
+                                                value="paypal">
+                                            <label class="radio-input__label"
+                                                for="paypal">paypal</label>
+                                        </div>
+
+                                        <div class="radio-input__box">
+                                            <input type="radio"
+                                                id="amazon"
+                                                name="pay-method"
+                                                value="amazon">
+                                            <label class="radio-input__label"
+                                                for="amazon">amazon
+                                                pay</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="order-info__button"
+                                    type="submit">
+                                    place order
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">footer</footer>
+        </div>
+    </body>
+</html>
