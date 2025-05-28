@@ -147,7 +147,7 @@ input:focus::placeholder {
 
 }
 
-.user-info__row--input-428 {
+.user-info__box-input--input-428 {
     flex-basis: 428px;
 }
 
@@ -178,6 +178,7 @@ input:focus::placeholder {
     content: "";
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
     border: 1px solid #ccc;
     border-radius: 3px;
     transition: border-color 0.3s;
@@ -191,7 +192,7 @@ input:focus::placeholder {
     border-color: #00B207;
 }
 
-.checkbox__box-input>input:checked+.checkbox__label::before {
+.checkbox__box-input input:checked+.checkbox__label::before {
     border: none;
     background: url(../img/checked.svg);
 }
@@ -384,6 +385,7 @@ input:focus::placeholder {
     content: "";
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
     border-radius: 50%;
     border: 1px solid #ccc;
     transition: all 0.3s;
