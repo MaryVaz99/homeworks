@@ -269,14 +269,15 @@ body {
 }
 
 .section-news__card {
+    display: flex;
+    flex-direction: column;
     flex-basis: 424px;
-    /* flex-grow: 1; */
+    flex-grow: 1;
     border-radius: 8px;
     border: 1px solid #E6E6E6;
 
     transition: box-shadow 0.3s ease-in-out,
         border-color 0.3s ease-in-out;
-
 }
 
 .card__img-wrap {
