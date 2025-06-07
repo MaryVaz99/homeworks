@@ -54,16 +54,12 @@ body {
     text-align: center;
 }
 
-/* ==============================components====================================================== */
+/*=====components===== */
 
 .title {
     font-size: 32px;
     line-height: 1.2;
     font-weight: 600;
-}
-
-.title--margin:not(:last-child) {
-    margin-bottom: 32px;
 }
 
 .link {
@@ -102,13 +98,18 @@ body {
     align-self: flex-start;
 }
 
-/* =============================section-products========================================= */
+/* =====section-products===== */
 
 .section-products__title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
+}
+
+.section-products__title--margin:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 .section-products__cards {
@@ -120,6 +121,7 @@ body {
     flex-basis: calc(20% + 1px);
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     background-color: #fff;
     border: 1px solid #e5e5e5;
     position: relative;
@@ -160,14 +162,18 @@ body {
     justify-content: space-between;
     padding: 12px;
     align-items: center;
+    flex-grow: 1;
 }
 
 .product-card__info {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    align-self: flex-start;
 }
 
 .product-card__link-title {
+    flex-grow: 1;
     color: #4d4d4d;
     text-transform: capitalize;
     transition: color 0.3s ease-in-out;
@@ -175,6 +181,7 @@ body {
 
 .product-card__price {
     font-weight: 500;
+    font-size: 16px;
 }
 
 .product-card__price:not(:last-child) {
@@ -256,15 +263,18 @@ body {
     height: 20px;
 }
 
-/* ==========================section-news========================================================= */
+/* =====section-news===== */
 
 .section-news__title {
     text-align: center;
 }
 
+.section-news__title:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .section-news__cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -272,7 +282,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: 424px;
-    flex-grow: 1;
+    overflow: hidden;
     border-radius: 8px;
     border: 1px solid #E6E6E6;
 
@@ -281,7 +291,6 @@ body {
 }
 
 .card__img-wrap {
-    width: 100%;
     aspect-ratio: 424/324;
     position: relative;
 }
@@ -320,6 +329,7 @@ body {
 }
 
 .card__content {
+    flex-grow: 1;
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -337,6 +347,7 @@ body {
 .card__item-box {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .card__item-info {
@@ -378,7 +389,7 @@ body {
 
 
 
-/* =========================Медіазапити для hover ============================================= */
+/* =====Медіазапити для hover =====*/
 
 @media (any-hover:hover) {
     .link:hover::before {
@@ -438,5 +449,87 @@ body {
     .product-card__actions {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+/* =====Adaptive===== */
+
+@media(max-width: 1199.98px) {
+    .section-products__card {
+        flex-basis: calc(25% + 1px);
+        flex-grow: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .page {
+        padding: 40px 0;
+    }
+
+    .page>*:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .section-products--margin:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .section-products__card {
+        flex-basis: calc(33.333% + 1px);
+    }
+
+    .section-news__cards {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 893.98px) {
+    .section-news__cards {
+        flex-wrap: wrap;
+    }
+
+    .section-news__card {
+        flex-basis: calc(50% - 8px);
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .section-products__card {
+        flex-basis: calc(50% + 1px);
+    }
+}
+
+@media (max-width: 600.98px) {
+    .section-news__card {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 479.98px) {
+
+    .page {
+        padding: 20px 0;
+    }
+
+    .page>*:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .section-products__title--margin:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .section-products__title {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .section-products__card {
+        flex-basis: calc(100% + 1px);
     }
 }
